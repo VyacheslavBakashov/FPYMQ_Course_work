@@ -69,3 +69,21 @@
 .header-menu__link:hover {
   text-decoration: underline;
 }
+
+
+@media (max-width: 1199px) {
+  .header {
+    padding: 43px 0 113px;
+    margin-bottom: 42px;
+
+    background-image: url("../images/banner-bg-tablet.jpg");
+  }
+
+  .header-logo {
+    width: 158px;
+  }
+
+  .header-title__text {
+    font-size: 4em;
+  }
+}

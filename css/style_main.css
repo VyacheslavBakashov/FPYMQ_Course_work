@@ -134,13 +134,16 @@
   line-height: 1;
   text-decoration: none;
 }
+
 .trend-post {
   padding-top: 6px;
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
 }
 
 .trend-post__link {
   color: #ffffff;
-  line-height: 1.2;
   text-decoration: none;
 }
 
@@ -167,7 +170,6 @@
   position: relative;
   display: flex;
   width: 780px;
-  list-style: none;
   display: flex;
   flex-direction: column;
 }
@@ -246,10 +248,10 @@ padding-top: 6px;
 
 /* Products */
 .products-container {
-  width: 100%;
   margin: 58px auto 0;
   display: flex;
   flex-direction: column;
+
 }
 
 .products__list {
@@ -258,37 +260,39 @@ padding-top: 6px;
   margin-bottom: 0;
   position: relative;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   box-sizing: border-box;
-  
+  justify-content: space-between;
+
 }
 
 .products__item {
-  display: flex;
+  position: relative;
   width: 29.7%;
-  flex-direction: column;
-  justify-content: space-between;
+  border: 3px solid #b59f5b;
+  margin-top: 175px;
+  box-sizing: border-box;
+  padding: 0 20px 25px;
 }
 
+
 .product-img {
-  margin: 3px auto;
-  max-width: 86.5%;
+  position: relative;
+  margin-top: -175px;
+  padding: 1.5px;
+  z-index: -1;
 }
 
 .product__image {
   width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  
 }
 
-.product {
-  box-sizing: border-box;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  border: 3px solid #b59f5b;
-  height: 266px;
-  margin-top: -35px;
-  padding: 45px 20px 0;
+.product-info {
+  margin-top: 15px;
 }
 
 .buy {
@@ -338,9 +342,18 @@ padding-top: 6px;
   width: 45.8%;
 }
 
+.product-link {
+  color: #b59f5b;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.product-link:hover {
+  text-decoration: underline;
+}
+
 /* Sidebar */
 .sidebar-container {
-  /* box-sizing: border-box; */
   width: 23.15%;
   display: flex;
   flex-direction: column;
@@ -349,7 +362,6 @@ padding-top: 6px;
 }
 
 .sidebar-posts {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -361,9 +373,7 @@ padding-top: 6px;
 .tags-title,
 .subscription__title,
 .sidebar-posts__title {
-  /* position: relative; */
   font-size: 14px;
-  /* box-sizing: border-box; */
   text-align: center;
   line-height: 1;
   margin-bottom: 22px;
@@ -375,7 +385,6 @@ padding-top: 6px;
   padding-right: 2px;
 }
 
-
 .categories-title::after,
 .tags-title::after,
 .subscription__title::after,
@@ -385,7 +394,6 @@ padding-top: 6px;
 
 /* Sidebar New posts */
 .sidebar-posts__list {
-  list-style: none;
   display: flex;
   flex-direction: column;
   padding: 6px 0 0;
@@ -424,7 +432,7 @@ padding-top: 6px;
 }
 
 .sidebar-post-title {
-  margin-top: 2px;
+  margin: 2px 0 0;
   width: 100%;
 }
 

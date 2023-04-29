@@ -1,5 +1,5 @@
 .footer-container {
-  padding-top: 9px;
+  padding-top: 12px;
   padding-bottom: 43px;
   display: flex;
   flex-direction: column;
@@ -40,4 +40,17 @@
   color: #999999;
   font-weight: 700;
   justify-content: center;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+  .footer-container {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer-container {
+    padding-top: 5px;
+    gap: 47px;
+  }
 }

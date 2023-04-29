@@ -1,8 +1,8 @@
 .popup {
   width: 100%;
   height: 100vh;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: rgba(0, 0, 0, 0.6);
   overflow-y: auto;
   position: fixed;
@@ -17,7 +17,7 @@
   box-sizing: border-box;
   flex-direction: column;
   position: relative;
-  width: 390px;
+  max-width: 390px;
   height: 590px;
   margin: auto;
   padding: 51px 30px 54px;
@@ -150,7 +150,7 @@
 
 .popup-close::after {
   content: url("../svg/form-x.svg");
-  width: 20px;
+  width: 100%;
 }
 
 .popup-button {
@@ -167,6 +167,79 @@
 
 .button:hover {
   background-color: #323232;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+
+  .popup-container {
+    height: 596px;
+  }
+  
+  .form-title {
+    font-size: 18px;
+  }
+
+  .radio-group:nth-of-type(n+2) {
+    margin-left: 35px;
+  }
+
+  .radio-text::before {
+    width: 23px;
+    height: 23px;
+    background-size: 23px;
+  }
+  
+  .field-label {
+    margin-bottom: 10px;
+  }
+
+  .popup-button {
+    margin-top: 25px;
+  }
+
+  .popup-close {
+    top: -36px;
+    width: 28px;
+  }
+
+}
+
+
+@media (max-width: 640px) {
+
+  .popup-container {
+    height: 546px;
+    max-width: 330px;
+    padding: 29px 25px 54px;
+  }
+  
+  .form-title {
+    font-size: 16px;
+  }
+
+  .radio-group:nth-of-type(n+2) {
+    margin-left: 35px;
+  }
+
+  .radio-text::before {
+    width: 23px;
+    height: 23px;
+    background-size: 23px;
+  }
+  
+  .field-label {
+    margin-bottom: 10px;
+  }
+
+  .popup-button {
+    margin-top: 25px;
+  }
+
+  .popup-close {
+    top: -35px;
+    width: 28px;
+  }
+
 }
 
 ._hidden {
